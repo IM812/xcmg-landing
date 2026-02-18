@@ -23,7 +23,7 @@ export function Header() {
           <div className="flex items-center gap-4 md:gap-8">
             <a href="/" className="relative h-8 w-24 sm:h-10 sm:w-32 md:h-12 md:w-40 transition-transform hover:scale-105 cursor-pointer">
               <Image 
-                src="/images/xcmg-logo-real.png" 
+                src="/images/logo.png" 
                 alt="XCMG CE" 
                 fill
                 className="object-contain"
