@@ -12,47 +12,46 @@ const categories = [
   {
     id: 'excavator-loaders',
     name: 'Экскаваторы-погрузчики XCMG',
-    image: '/images/backhoe-styled.jpg',
+    image: '/images/e1.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   },
   {
     id: 'wheel-excavators',
     name: 'Колесные экскаваторы XCMG',
-    image: '/images/wheel-excavator-new.jpg',
+    image: '/images/e2.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   },
   {
     id: 'track-excavators',
     name: 'Гусеничные экскаваторы XCMG',
-    image: '/images/excavator-styled.jpg',
+    image: '/images/e3.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   },
   {
     id: 'mini-loaders',
     name: 'Мини-погрузчики XCMG',
-    image: '/images/skid-steer-styled.jpg',
+    image: '/images/e4.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   },
   {
     id: 'wheel-loaders',
     name: 'Фронтальные погрузчики XCMG',
-    image: '/images/loader-styled.jpg',
+    image: '/images/e5.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   },
   {
     id: 'rollers',
     name: 'Катки XCMG',
-    image: '/images/roller-styled.jpg',
+    image: '/images/e6.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   },
   {
     id: 'graders',
     name: 'Грейдеры XCMG',
-    image: '/images/grader-styled-v2.jpg',
+    image: '/images/e7.jpg',
     specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
   }
 ]
-
 export function CatalogSection() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [priceRequestCategory, setPriceRequestCategory] = useState<string | null>(null)
