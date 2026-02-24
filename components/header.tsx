@@ -19,7 +19,7 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300">
-        <div className="w-full flex h-20 sm:h-16 items-center justify-between px-4 md:px-6">
+        <div className="w-full flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-4 md:gap-8">
             <a href="/" className="relative h-8 w-24 sm:h-10 sm:w-32 md:h-12 md:w-40 transition-transform hover:scale-105 cursor-pointer">
               <Image 
@@ -61,7 +61,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 md:gap-4">
             {/* Мобильные: номер сверху, почта снизу, прижато вправо */}
-            <div className="flex sm:hidden flex-col items-end justify-center gap-1 self-center">
+            <div className="flex sm:hidden flex-col items-end gap-0.5">
               <a href="tel:+74952265585" className="text-xs font-semibold text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
                 8 (495) 226-55-85
               </a>
