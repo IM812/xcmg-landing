@@ -46,7 +46,7 @@ export function AdvantagesSection() {
             return (
               <div 
                 key={idx} 
-                className="flex flex-col items-center text-center group p-3 sm:p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-accent/50 transition-all duration-500 hover:shadow-lg hover:shadow-accent/20 animate-in fade-in zoom-in duration-700"
+                className={`flex flex-col items-center text-center group p-3 sm:p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-accent/50 transition-all duration-500 hover:shadow-lg hover:shadow-accent/20 animate-in fade-in zoom-in duration-700 ${idx === advantages.length - 1 ? 'col-span-2 md:col-span-1' : ''}`}
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
                 <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent/10 mb-2 sm:mb-3 transition-all duration-500 group-hover:bg-accent group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/50">
