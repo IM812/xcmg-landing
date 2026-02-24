@@ -13,43 +13,43 @@ const categories = [
     id: 'excavator-loaders',
     name: 'Экскаваторы-погрузчики XCMG',
     image: '/images/e1.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   },
   {
     id: 'wheel-excavators',
     name: 'Колесные экскаваторы XCMG',
     image: '/images/e2.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   },
   {
     id: 'track-excavators',
     name: 'Гусеничные экскаваторы XCMG',
     image: '/images/e3.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   },
   {
     id: 'mini-loaders',
     name: 'Мини-погрузчики XCMG',
     image: '/images/e4.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   },
   {
     id: 'wheel-loaders',
     name: 'Фронтальные погрузчики XCMG',
     image: '/images/e5.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   },
   {
     id: 'rollers',
     name: 'Катки XCMG',
     image: '/images/e6.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   },
   {
     id: 'graders',
     name: 'Грейдеры XCMG',
     image: '/images/e7.jpg',
-    specs: ['Подбор комплектации', 'Поставка и лизинг', 'Сервис и запчасти']
+    specs: ['Подбор комплектации', 'Поставка и лизинг']
   }
 ]
 export function CatalogSection() {
@@ -99,7 +99,7 @@ export function CatalogSection() {
                     {category.specs.map((spec, specIdx) => (
                       <li 
                         key={specIdx} 
-                        className={`items-start gap-1 sm:gap-1.5 opacity-70 group-hover:opacity-100 transition-all duration-300 ${specIdx === 2 ? 'hidden sm:flex' : 'flex'}`}
+                        className="flex items-start gap-1 sm:gap-1.5 opacity-70 group-hover:opacity-100 transition-all duration-300"
                         style={{ transitionDelay: `${specIdx * 50}ms` }}
                       >
                         <Check className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-3.5 md:w-3.5 text-accent shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
