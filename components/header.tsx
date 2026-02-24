@@ -66,13 +66,13 @@ export function Header() {
               <a href="tel:+74952265585" className="hidden sm:block text-sm font-medium hover:text-accent transition-colors duration-300">
                 8 (495) 226-55-85
               </a>
-              {/* Мобильные: иконка и почта в одну строку */}
-              <div className="flex sm:hidden items-center gap-2">
-                <a href="tel:+74952265585" className="flex items-center justify-center w-8 h-8 rounded-full bg-accent/10 hover:bg-accent/20 transition-colors duration-300 shrink-0">
-                  <Phone className="h-4 w-4 text-accent" />
-                </a>
+              {/* Мобильные: почта слева, иконка телефона справа */}
+              <div className="flex sm:hidden items-center gap-3">
                 <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
                   info@xcmg-ce.com
+                </a>
+                <a href="tel:+74952265585" className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent hover:bg-accent/80 transition-colors duration-300 shrink-0 shadow-md">
+                  <Phone className="h-4 w-4 text-accent-foreground" />
                 </a>
               </div>
               {/* Десктоп: почта */}
