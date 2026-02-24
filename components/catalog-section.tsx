@@ -95,15 +95,15 @@ export function CatalogSection() {
                 <CardContent className="p-3 sm:p-4 md:p-5">
                   <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mb-1.5 sm:mb-3 md:mb-4 line-clamp-2 transition-colors duration-300 group-hover:text-accent min-h-[24px] sm:min-h-[40px] md:min-h-[56px]">{category.name}</h3>
                   
-                  <ul className="space-y-0.5 sm:space-y-1.5">
+                  <ul className="mt-2 sm:mt-0 space-y-1 sm:space-y-1.5">
                     {category.specs.map((spec, specIdx) => (
                       <li 
                         key={specIdx} 
-                        className="flex items-start gap-1 sm:gap-1.5 opacity-70 group-hover:opacity-100 transition-all duration-300"
+                        className="flex items-center gap-1.5 sm:gap-1.5 opacity-70 group-hover:opacity-100 transition-all duration-300"
                         style={{ transitionDelay: `${specIdx * 50}ms` }}
                       >
-                        <Check className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-3.5 md:w-3.5 text-accent shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
-                        <span className="transition-transform duration-300 group-hover:translate-x-1 line-clamp-1 text-[10px] sm:text-xs md:text-sm leading-tight">{spec}</span>
+                        <Check className="h-3 w-3 sm:h-3 sm:w-3 md:h-3.5 md:w-3.5 text-accent shrink-0 transition-transform duration-300 group-hover:scale-110" />
+                        <span className="transition-transform duration-300 group-hover:translate-x-1 line-clamp-1 text-[11px] sm:text-xs md:text-sm leading-snug">{spec}</span>
                       </li>
                     ))}
                   </ul>
