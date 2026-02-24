@@ -1,5 +1,3 @@
-
-
 export function ContactsSection() {
   return (
     <section id="contacts" className="py-12 md:py-16 relative overflow-hidden">
