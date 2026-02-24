@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
@@ -55,6 +55,14 @@ const categories = [
 export function CatalogSection() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [priceRequestCategory, setPriceRequestCategory] = useState<string | null>(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   return (
     <>
@@ -93,10 +101,10 @@ export function CatalogSection() {
                 </div>
                 
                 <CardContent className="p-3 sm:p-4 md:p-5">
-                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mb-2 sm:mb-3 md:mb-4 line-clamp-2 transition-colors duration-300 group-hover:text-accent min-h-[32px] sm:min-h-[40px] md:min-h-[56px]">{category.name}</h3>
+                  <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mb-2 sm:mb-3 md:mb-4 line-clamp-2 transition-colors duration-300 group-hover:text-accent min-h-[28px] sm:min-h-[40px] md:min-h-[56px]">{category.name}</h3>
                   
-                  <ul className="space-y-1 sm:space-y-2 hidden sm:block">
-                    {category.specs.slice(0, 2).map((spec, specIdx) => (
+                  <ul className="space-y-1 sm:space-y-2">
+                    {category.specs.slice(0, isMobile ? 1 : 2).map((spec, specIdx) => (
                       <li 
                         key={specIdx} 
                         className="flex items-start gap-1.5 text-xs md:text-sm opacity-70 group-hover:opacity-100 transition-all duration-300"
