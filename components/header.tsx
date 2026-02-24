@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { CallbackModal } from '@/components/callback-modal'
-import { Phone, Mail } from 'lucide-react'
+
 import Image from 'next/image'
 
 export function Header() {
@@ -60,23 +60,10 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <a 
-              href="mailto:info@xcmg-ce.com" 
-              className="flex lg:hidden items-center justify-center w-10 h-10 rounded-full hover:bg-accent/10 transition-all duration-300"
-            >
-              <Mail className="h-5 w-5 text-accent" />
-            </a>
-            <a 
-              href="tel:+74952265585" 
-              className="flex lg:hidden items-center justify-center w-10 h-10 rounded-full hover:bg-accent/10 transition-all duration-300"
-            >
-              <Phone className="h-5 w-5 text-accent" />
-            </a>
-            <a href="mailto:info@xcmg-ce.com" className="hidden lg:flex items-center gap-2 text-xs font-medium hover:text-accent transition-colors duration-300">
+            <a href="mailto:info@xcmg-ce.com" className="flex items-center gap-2 text-xs font-medium hover:text-accent transition-colors duration-300">
               <span>info@xcmg-ce.com</span>
             </a>
-            <a href="tel:+74952265585" className="hidden lg:flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors duration-300">
-              <Phone className="h-4 w-4" />
+            <a href="tel:+74952265585" className="flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors duration-300">
               <span>8 (495) 226-55-85</span>
             </a>
             <Button 
