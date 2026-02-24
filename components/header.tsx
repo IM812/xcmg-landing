@@ -61,11 +61,11 @@ export function Header() {
 
           <div className="flex items-center gap-2 md:gap-4">
             {/* Мобильные: почта слева, номер справа */}
-            <div className="flex sm:hidden flex-row items-center gap-3 ml-auto">
-              <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
+            <div className="flex sm:hidden flex-row gap-3">
+              <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap leading-none my-auto">
                 info@xcmg-ce.com
               </a>
-              <a href="tel:+74952265585" className="text-xs font-semibold text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
+              <a href="tel:+74952265585" className="text-xs font-semibold text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap leading-none my-auto">
                 8 (495) 226-55-85
               </a>
             </div>
