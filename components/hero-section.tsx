@@ -59,11 +59,9 @@ export function HeroSection() {
   return (
     <section className="relative py-12 md:py-20 lg:py-24 overflow-hidden">
       {/* Background excavator image */}
-      <div className="absolute inset-0 bg-[url('/images/background-excavator-v2.jpg')] bg-cover bg-center opacity-40 animate-in fade-in duration-1000" />
+      <div className="absolute inset-0 bg-[url('/images/background-excavator-v2.jpg')] bg-cover bg-center opacity-65 animate-in fade-in duration-1000" />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/70 via-background/60 to-background/70" />
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/60 via-background/40 to-background/60" />
       
       <div className="container relative z-10 px-4 md:px-6 mx-auto">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start max-w-7xl mx-auto">
