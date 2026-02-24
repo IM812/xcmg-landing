@@ -60,12 +60,14 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <a href="mailto:info@xcmg-ce.com" className="hidden lg:flex items-center gap-2 text-xs font-medium hover:text-accent transition-colors duration-300">
-              <span>info@xcmg-ce.com</span>
-            </a>
-            <a href="tel:+74952265585" className="flex items-center gap-2 text-xs sm:text-sm font-medium hover:text-accent transition-colors duration-300">
-              <span>8 (495) 226-55-85</span>
-            </a>
+            <div className="flex flex-col items-end gap-0.5">
+              <a href="tel:+74952265585" className="text-xs sm:text-sm font-medium hover:text-accent transition-colors duration-300">
+                8 (495) 226-55-85
+              </a>
+              <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
+                info@xcmg-ce.com
+              </a>
+            </div>
             <Button 
               onClick={() => setIsCallbackOpen(true)} 
               className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:scale-105 hover:shadow-lg text-xs sm:text-sm px-3 sm:px-4 hidden sm:flex"
