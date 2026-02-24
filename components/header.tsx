@@ -60,10 +60,10 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <a href="mailto:info@xcmg-ce.com" className="flex items-center gap-2 text-xs font-medium hover:text-accent transition-colors duration-300">
+            <a href="mailto:info@xcmg-ce.com" className="hidden lg:flex items-center gap-2 text-xs font-medium hover:text-accent transition-colors duration-300">
               <span>info@xcmg-ce.com</span>
             </a>
-            <a href="tel:+74952265585" className="flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors duration-300">
+            <a href="tel:+74952265585" className="flex items-center gap-2 text-xs sm:text-sm font-medium hover:text-accent transition-colors duration-300">
               <span>8 (495) 226-55-85</span>
             </a>
             <Button 
