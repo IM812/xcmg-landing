@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Phone } from 'lucide-react'
 import { CallbackModal } from '@/components/callback-modal'
 
 import Image from 'next/image'
@@ -20,7 +19,7 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300">
-        <div className="w-full flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="w-full flex h-12 sm:h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-4 md:gap-8">
             <a href="/" className="relative h-8 w-24 sm:h-10 sm:w-32 md:h-12 md:w-40 transition-transform hover:scale-105 cursor-pointer">
               <Image 
@@ -61,13 +60,13 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
-            {/* Мобильные: почта + иконка в одну строку */}
-            <div className="flex sm:hidden flex-row items-center gap-2">
-              <a href="mailto:info@xcmg-ce.com" className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap leading-none">
+            {/* Мобильные: почта слева, номер справа */}
+            <div className="flex sm:hidden flex-row gap-3 translate-y-2">
+              <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
                 info@xcmg-ce.com
               </a>
-              <a href="tel:+74952265585" className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-accent hover:bg-accent/80 transition-colors duration-300 shrink-0 shadow-md">
-                <Phone className="h-4 w-4 text-accent-foreground" />
+              <a href="tel:+74952265585" className="text-xs font-semibold text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
+                8 (495) 226-55-85
               </a>
             </div>
             {/* Десктоп: номер и почта стопкой */}
