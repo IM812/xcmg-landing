@@ -82,7 +82,7 @@ export function CatalogSection() {
                 className={`overflow-hidden hover:shadow-2xl hover:shadow-accent/20 transition-all duration-500 hover:scale-[1.03] hover:-translate-y-2 hover:border-accent/50 group animate-in fade-in slide-in-from-bottom-8 duration-700 cursor-pointer ${isLast ? 'col-span-2 lg:col-span-1' : ''}`}
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
-                <div className="aspect-square bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 relative overflow-hidden">
+                <div className={`bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 relative overflow-hidden ${isLast ? 'aspect-video sm:aspect-square' : 'aspect-square'}`}>
                   <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.15),transparent_70%)]" />
                   <Image 
                     src={category.image} 
