@@ -61,7 +61,7 @@ export function Header() {
 
           <div className="flex items-center gap-2 md:gap-4">
             {/* Мобильные: почта слева, номер справа */}
-            <div className="flex sm:hidden flex-row gap-3 mt-3">
+            <div className="flex sm:hidden flex-row gap-3 mt-5">
               <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
                 info@xcmg-ce.com
               </a>
