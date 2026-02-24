@@ -99,7 +99,7 @@ export function CatalogSection() {
                     {category.specs.map((spec, specIdx) => (
                       <li 
                         key={specIdx} 
-                        className={`flex items-start gap-1 sm:gap-1.5 opacity-70 group-hover:opacity-100 transition-all duration-300 ${specIdx === 2 ? 'sm:hidden' : ''}`}
+                        className={`items-start gap-1 sm:gap-1.5 opacity-70 group-hover:opacity-100 transition-all duration-300 ${specIdx === 2 ? 'hidden sm:flex' : 'flex'}`}
                         style={{ transitionDelay: `${specIdx * 50}ms` }}
                       >
                         <Check className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-3.5 md:w-3.5 text-accent shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
