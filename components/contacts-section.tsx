@@ -1,4 +1,4 @@
-import { Mail, MapPin } from 'lucide-react'
+
 
 export function ContactsSection() {
   return (
@@ -17,28 +17,18 @@ export function ContactsSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 mb-6">
               <a 
                 href="mailto:info@xcmg-ce.com"
-                className="flex items-center gap-3 group hover:scale-105 transition-all duration-300"
+                className="flex flex-col items-center gap-1 group hover:scale-105 transition-all duration-300"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 transition-all duration-500 group-hover:bg-accent group-hover:shadow-lg group-hover:shadow-accent/50">
-                  <Mail className="h-6 w-6 text-accent transition-colors duration-500 group-hover:text-accent-foreground" />
-                </div>
-                <div className="text-left">
-                  <p className="text-xs text-muted-foreground">Email</p>
-                  <p className="text-sm font-medium group-hover:text-accent transition-colors">info@xcmg-ce.com</p>
-                </div>
+                <p className="text-xs text-muted-foreground">Email</p>
+                <p className="text-sm font-medium group-hover:text-accent transition-colors">info@xcmg-ce.com</p>
               </a>
 
               <a 
                 href="tel:+74952265585"
-                className="flex items-center gap-3 group hover:scale-105 transition-all duration-300"
+                className="flex flex-col items-center gap-1 group hover:scale-105 transition-all duration-300"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 transition-all duration-500 group-hover:bg-accent group-hover:shadow-lg group-hover:shadow-accent/50">
-                  <MapPin className="h-6 w-6 text-accent transition-colors duration-500 group-hover:text-accent-foreground" />
-                </div>
-                <div className="text-left">
-                  <p className="text-xs text-muted-foreground">Телефон</p>
-                  <p className="text-sm font-medium group-hover:text-accent transition-colors">8 (495) 226-55-85</p>
-                </div>
+                <p className="text-xs text-muted-foreground">Телефон</p>
+                <p className="text-sm font-medium group-hover:text-accent transition-colors">8 (495) 226-55-85</p>
               </a>
             </div>
 
