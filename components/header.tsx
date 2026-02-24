@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import { Phone } from 'lucide-react'
 import { CallbackModal } from '@/components/callback-modal'
 
 import Image from 'next/image'
@@ -61,9 +62,12 @@ export function Header() {
 
           <div className="flex items-center gap-2 md:gap-4">
             <div className="flex flex-col items-end gap-0.5">
-              <a href="tel:+74952265585" className="text-xs sm:text-sm font-medium hover:text-accent transition-colors duration-300">
-                8 (495) 226-55-85
+              {/* Мобильные: иконка телефона. Десктоп: текст */}
+              <a href="tel:+74952265585" className="hover:text-accent transition-colors duration-300">
+                <Phone className="h-5 w-5 sm:hidden text-accent" />
+                <span className="hidden sm:inline text-sm font-medium">8 (495) 226-55-85</span>
               </a>
+              {/* Почта — всегда текстом */}
               <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
                 info@xcmg-ce.com
               </a>
