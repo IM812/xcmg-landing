@@ -62,10 +62,13 @@ export function Header() {
 
           <div className="flex items-center gap-2 md:gap-4">
             <div className="flex flex-col items-end gap-0.5">
-              {/* Мобильные: иконка телефона. Десктоп: текст */}
-              <a href="tel:+74952265585" className="hover:text-accent transition-colors duration-300">
-                <Phone className="h-5 w-5 sm:hidden text-accent" />
-                <span className="hidden sm:inline text-sm font-medium">8 (495) 226-55-85</span>
+              {/* Мобильные: только иконка */}
+              <a href="tel:+74952265585" className="sm:hidden flex items-center justify-center w-9 h-9 rounded-full bg-accent/10 hover:bg-accent/20 transition-colors duration-300">
+                <Phone className="h-5 w-5 text-accent" />
+              </a>
+              {/* Десктоп: текст */}
+              <a href="tel:+74952265585" className="hidden sm:block text-sm font-medium hover:text-accent transition-colors duration-300">
+                8 (495) 226-55-85
               </a>
               {/* Почта — всегда текстом */}
               <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
