@@ -60,8 +60,8 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
-            {/* Мобильные: номер сверху, почта снизу, прижато вправо */}
-            <div className="flex sm:hidden flex-col items-end gap-0.5">
+            {/* Мобильные: номер слева, почта правее, оба в одну строку */}
+            <div className="flex sm:hidden flex-row items-center gap-3 ml-auto">
               <a href="tel:+74952265585" className="text-xs font-semibold text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
                 8 (495) 226-55-85
               </a>
