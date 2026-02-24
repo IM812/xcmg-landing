@@ -61,22 +61,21 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <div className="flex flex-col items-end gap-0.5">
-              {/* Десктоп: текст номера */}
-              <a href="tel:+74952265585" className="hidden sm:block text-sm font-medium hover:text-accent transition-colors duration-300">
+            {/* Мобильные: почта + иконка в одну строку */}
+            <div className="flex sm:hidden items-center gap-2">
+              <a href="mailto:info@xcmg-ce.com" className="text-sm font-medium text-foreground hover:text-accent transition-colors duration-300 whitespace-nowrap">
+                info@xcmg-ce.com
+              </a>
+              <a href="tel:+74952265585" className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent hover:bg-accent/80 transition-colors duration-300 shrink-0 shadow-md">
+                <Phone className="h-4 w-4 text-accent-foreground" />
+              </a>
+            </div>
+            {/* Десктоп: номер и почта стопкой */}
+            <div className="hidden sm:flex flex-col items-end gap-0.5">
+              <a href="tel:+74952265585" className="text-sm font-medium hover:text-accent transition-colors duration-300">
                 8 (495) 226-55-85
               </a>
-              {/* Мобильные: почта слева, иконка телефона справа */}
-              <div className="flex sm:hidden items-center gap-3">
-                <a href="mailto:info@xcmg-ce.com" className="text-sm text-muted-foreground hover:text-accent transition-colors duration-300 leading-none self-center">
-                  info@xcmg-ce.com
-                </a>
-                <a href="tel:+74952265585" className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent hover:bg-accent/80 transition-colors duration-300 shrink-0 shadow-md">
-                  <Phone className="h-4 w-4 text-accent-foreground" />
-                </a>
-              </div>
-              {/* Десктоп: почта */}
-              <a href="mailto:info@xcmg-ce.com" className="hidden sm:block text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
+              <a href="mailto:info@xcmg-ce.com" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
                 info@xcmg-ce.com
               </a>
             </div>
