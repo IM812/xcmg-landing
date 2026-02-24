@@ -1,67 +1,51 @@
-
-
-import { Mail, Phone } from 'lucide-react'
-
 export function ContactsSection() {
   return (
-    <section id="contacts" className="pt-12 pb-0 md:pt-16 relative overflow-hidden">
+    <section id="contacts" className="py-12 md:py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-background via-muted/20 to-background" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.05),transparent_60%)]" />
       <div className="container relative z-10 px-4 md:px-6 mx-auto">
         <div className="max-w-4xl mx-auto">
-
-          {/* Contacts card */}
-          <div className="bg-card/50 backdrop-blur-md border border-border/50 rounded-2xl p-6 sm:p-8 shadow-lg animate-in fade-in zoom-in duration-700 delay-300">
-            <h2 className="text-base sm:text-lg font-semibold text-muted-foreground uppercase tracking-widest mb-6">
+          <div className="text-center mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
               Контакты
             </h2>
+          </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              {/* Email */}
-              <a
+          <div className="bg-card/50 backdrop-blur-md border border-border/50 rounded-2xl p-6 sm:p-8 shadow-lg animate-in fade-in zoom-in duration-700 delay-300">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 mb-6">
+              <a 
                 href="mailto:info@xcmg-ce.com"
-                className="flex items-center gap-4 group p-4 rounded-xl border border-border/40 bg-background/30 hover:border-accent/50 hover:bg-accent/5 transition-all duration-300"
+                className="flex flex-col items-center gap-1 group hover:scale-105 transition-all duration-300"
               >
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-accent/10 border border-accent/20 shrink-0 group-hover:bg-accent/20 transition-colors duration-300">
-                  <Mail className="w-4 h-4 text-accent" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider mb-0.5">Email</p>
-                  <p className="text-sm font-medium truncate group-hover:text-accent transition-colors duration-300">info@xcmg-ce.com</p>
-                </div>
+                <p className="text-xs text-muted-foreground">Email</p>
+                <p className="text-sm font-medium group-hover:text-accent transition-colors">info@xcmg-ce.com</p>
               </a>
 
-              {/* Phone */}
-              <a
+              <a 
                 href="tel:+74952265585"
-                className="flex items-center gap-4 group p-4 rounded-xl border border-border/40 bg-background/30 hover:border-accent/50 hover:bg-accent/5 transition-all duration-300"
+                className="flex flex-col items-center gap-1 group hover:scale-105 transition-all duration-300"
               >
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-accent/10 border border-accent/20 shrink-0 group-hover:bg-accent/20 transition-colors duration-300">
-                  <Phone className="w-4 h-4 text-accent" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] text-muted-foreground uppercase tracking-wider mb-0.5">Телефон</p>
-                  <p className="text-sm font-medium group-hover:text-accent transition-colors duration-300">8 (495) 226-55-85</p>
-                </div>
+                <p className="text-xs text-muted-foreground">Телефон</p>
+                <p className="text-sm font-medium group-hover:text-accent transition-colors">8 (495) 226-55-85</p>
               </a>
             </div>
-          </div>
 
-          {/* Footer */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 py-6 border-t border-border/30 mt-6">
-            <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} XCMG CE. Все права защищены.
-            </p>
-            <div className="flex items-center gap-4">
-              <a href="#" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
-                Политика конфиденциальности
-              </a>
-              <span className="text-border/60 text-xs">·</span>
-              <a href="#" className="text-xs text-muted-foreground hover:text-accent transition-colors duration-300">
-                Согласие на обработку данных
-              </a>
+            <div className="text-center pt-6 border-t border-border/50">
+              <p className="text-xs sm:text-sm text-muted-foreground">
+                © {new Date().getFullYear()} XCMG CE. Все права защищены.
+                <span className="hidden sm:inline">
+                  {' · '}
+                  <a href="#" className="hover:text-accent transition-colors duration-300">
+                    Политика конфиденциальности
+                  </a>
+                  {' · '}
+                  <a href="#" className="hover:text-accent transition-colors duration-300">
+                    Согласие на обработку данных
+                  </a>
+                </span>
+              </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
